@@ -17,8 +17,8 @@ let z2 = Complex::from(1., 1.);
 // from polar coords
 let z3 = Complex::from_polar(1., std::f64::consts::PI / 2.);
 
-let z4 = Complex::unit();
-let z5 = Complex::zero();
+let z4 = Complex::unit(); // 1+0i
+let z5 = Complex::zero(); // 0+0i
 
 // generating roots of unity, for example, 3 roots of unity
 // always includes 1+0i as the first entry
