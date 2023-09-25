@@ -11,7 +11,7 @@ let z1 = Complex {
     im: 1.,
 };
 
-// shorthand (re, im)
+// shorthand (re, im)g
 let z2 = Complex::from(1., 1.);
 
 // from polar coords
@@ -29,7 +29,9 @@ assert_eq!(roots.len(), 3);
 let z3 = &z1 + &z2; // addition
 let z4 = &z1 - &z2; // subtraction
 let z5 = &z1 * &z2; // multiplication
+let z5 = &z1 * 2.; // multiplication by float
 let z6 = &z1 / &z2; // division
+let z6 = &z1 / 2.; // division by float
 let z7 = -&z1; // negation
 let z8 = !&z1; // complex conjugation (a+bi -> a-bi)
 
