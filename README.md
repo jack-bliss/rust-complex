@@ -11,7 +11,7 @@ let z1 = Complex {
     im: 1.,
 };
 
-// shorthand (re, im)g
+// shorthand (re, im)
 let z2 = Complex::from(1., 1.);
 
 // from polar coords
