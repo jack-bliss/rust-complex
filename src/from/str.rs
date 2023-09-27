@@ -82,4 +82,10 @@ mod test_parse_complex_number_from_string {
         let other_parts_err = Complex::from_str("its 3+2i").unwrap_err();
         assert_eq!(other_parts_err, ParseComplexError::MatchError);
     }
+
+    #[test]
+    fn should_use_string_parse() {
+        let z = String::from("2+3i").parse::<Complex>().unwrap();
+        assert_eq!(z, Complex::from(2., 3.));
+    }
 }
