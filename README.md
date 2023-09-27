@@ -5,6 +5,9 @@
 ## Creating complex numbers
 
 ```rust
+// PI is used for polar form expressions
+use std::f64::consts::PI;
+
 // creating directly
 let raw = Complex {
     re: 1.,
@@ -17,13 +20,13 @@ let from_re = Complex::re(3.); // 3+0i
 let from_im = Complex::im(3.); // 0+3i
 let unit = Complex::unit(); // 1+0i
 let zero = Complex::zero(); // 0+0i
+let theta = Complex::theta(PI / 4.) // √2/2 + √2/2i
 
 // from string
 let from_str = Complex::from_str("2+3i"); // 2+3i
 
 // from polar coords
-use std::f64::consts::PI;
-let from_polar = Complex::from_polar(1., PI / 2.); // 0+1i
+let from_polar = Complex::from_polar(2., PI / 2.); // 0+2i
 
 // generating roots of unity, for example, 3 roots of unity
 // always includes 1+0i as the first entry

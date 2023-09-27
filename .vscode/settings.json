@@ -1,5 +1,5 @@
 {
-  "cSpell.words": ["consts", "powf", "powi"],
+  "cSpell.words": ["consts", "powf", "powi", "thiserror"],
   "rust-analyzer.linkedProjects": ["./Cargo.toml", "./Cargo.toml"],
   "rust-analyzer.showUnlinkedFileNotification": false
 }

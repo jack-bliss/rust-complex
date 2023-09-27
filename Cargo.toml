@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 impl_ops = "0.1.1"
 regex = "1.9.5"
+thiserror = "1.0.49"
+lazy_static = "1.4.0"

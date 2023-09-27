@@ -1,6 +1,6 @@
 use std::f64::consts::TAU;
 
-use crate::{assert, Complex};
+use crate::{assert, pow::Power, Complex};
 
 #[test]
 fn roots_of_unity() {
@@ -23,7 +23,7 @@ fn roots_of_unity() {
     five_root.iter().for_each(|root| {
         // taking root to the fifth power should be close to 1
         assert::close(
-            &root.pow(5.),    // root to 5th power
+            &root.pow(5),     // root to 5th power
             &Complex::unit(), // 1 in complex form
         )
     })
