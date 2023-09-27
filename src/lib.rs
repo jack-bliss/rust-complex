@@ -11,7 +11,6 @@ mod assert;
 mod cmp;
 mod format;
 mod from;
-mod from_str;
 mod ops;
 mod pow;
 mod roots_of_unity;
